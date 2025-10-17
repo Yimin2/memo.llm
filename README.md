@@ -46,7 +46,7 @@ memo.llm/
 │   ├── components/     # 재사용 가능한 컴포넌트
 │   ├── layouts/        # 레이아웃 페이지
 │   ├── pages/          # 페이지 컴포넌트
-│   ├── router/         # router 경로
+│   ├── index/         # index 경로
 │   ├── store/          # Redux 스토어 설정
 │   └── utils/          # 유틸리티 함수
 ├── public/
