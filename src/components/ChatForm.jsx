@@ -1,6 +1,6 @@
 export default function ChatForm({ prompt, setPrompt, onSubmit, isLoading }) {
     return (
-        <form onSubmit={onSubmit} className="flex-shrink-0 flex gap-2 p-4 mb-4">
+        <form onSubmit={onSubmit} className="flex-shrink-0 flex gap-2 p-4 mb-4어">
             <input
                 type="text"
                 value={prompt}

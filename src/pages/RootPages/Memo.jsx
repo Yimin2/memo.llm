@@ -5,6 +5,7 @@ import {chat} from "../../utils/genai.js";
 import {useSelector} from "react-redux";
 import {useNavigate} from "react-router-dom";
 import PATHS from "../../constants/paths.js";
+import {saveMemo} from "../../utils/memoStorage.js";
 
 export default function Memo() {
     const [prompt, setPrompt] = useState("")
@@ -63,14 +64,26 @@ export default function Memo() {
         }
     }
 
+    function handleSaveMemo(content) {
+        try {
+            saveMemo(content)
+            alert("메모가 저장되었습니다!")
+        } catch (error) {
+            console.error("메모 저장 실패:", error)
+            alert("메모 저장에 실패했습니다.")
+        }
+    }
 
-    return (<>
-        <ChatContainer messages={messages}/>
-        <ChatForm
-            prompt={prompt}
-            setPrompt={setPrompt}
-            isLoading={isLoading}
-            onSubmit={handleSubmit}
-        />
-    </>)
+
+    return (
+        <div className="flex flex-col h-screen">
+            <ChatContainer messages={messages} onSaveMemo={handleSaveMemo}/>
+            <ChatForm
+                prompt={prompt}
+                setPrompt={setPrompt}
+                isLoading={isLoading}
+                onSubmit={handleSubmit}
+            />
+        </div>
+    )
 }
