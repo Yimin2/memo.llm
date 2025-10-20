@@ -1,16 +1,19 @@
 import React from 'react';
-import {Link, Outlet, useLocation} from "react-router-dom";
+import {Link, Outlet, useLocation, useNavigate} from "react-router-dom";
 import {useSelector, useDispatch} from "react-redux";
 import {logout} from "../store/authSlice.js";
+import PATHS from "../constants/paths.js";
 
 function RootLayout() {
     const location = useLocation();
     const {token} = useSelector((state) => state.auth);
     const dispatch = useDispatch();
+    const navigate = useNavigate()
 
     const handleLogout = () => {
         dispatch(logout());
         alert("로그아웃 되었습니다.");
+        navigate(PATHS.HOME)
     };
 
     const isActive = (path) => location.pathname === path;
