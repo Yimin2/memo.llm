@@ -102,6 +102,20 @@ memo.llm/
 | 메모 작성 | `/memo` | AI와 채팅하며 할 일 관리 |
 | 메모 목록 | `/memolist` | 저장된 메모 조회 및 관리 |
 
+## 기능 영상
+
+| 홈 화면 및 반응형 구현  🙋‍♂️ |
+|-----------------------------|
+| <img src="https://github.com/user-attachments/assets/9c7a7819-6aef-4cc0-80c3-77cc03558112" width="475px" height="475px"> |
+
+| 로그인 기능 🔐 | 로그아웃 및 회원가입 기능 🙋‍♂️ |
+|----------------|----------------|
+| <img src="https://github.com/user-attachments/assets/dffb03a1-ea0a-4ac3-a479-274fcb1c9f09" width="475px" height="475px"> | <img src="https://github.com/user-attachments/assets/47632906-ad86-4c0d-8de4-de7c3fa58c5d" width="475px" height="475px"> |
+
+| 메모 생성 기능 📝 | 메모 저장, 삭제 기능 💾 |
+|----------------|----------------|
+| <img src="https://github.com/user-attachments/assets/e4519af2-cc41-48ba-826f-8cd74b23bfa1" width="475px" height="475px"> | <img src="https://github.com/user-attachments/assets/5d20e312-bd9c-4019-8f27-aeeeba13841f" width="475px" height="475px"> |
+
 ## 🚀 시작하기
 
 ### 환경 변수 설정
